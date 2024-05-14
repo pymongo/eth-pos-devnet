@@ -54,6 +54,15 @@ INFO [08-19|00:44:42.733] Imported new potential chain segment     blocks=1 txs=
 INFO [08-19|00:44:42.747] Chain head was updated                   number=53 hash=ee046e..e56b0c root=815538..801014 elapsed="821.084µs"
 ```
 
+# Limit git changes
+
+To limit the 'git noise' triggered by changes in the genesis file remember about the git update-index command (https://stackoverflow.com/questions/936249/how-to-stop-tracking-and-ignore-changes-to-a-file-in-git)
+
+```
+git update-index --assume-unchanged execution/genesis.json
+```
+
+
 # Available Features
 
 - Starts from the Capella Ethereum hard fork
