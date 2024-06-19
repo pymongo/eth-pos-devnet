@@ -89,11 +89,11 @@ services:
       # sockets requires short paths, so disable ipc
       # https://github.com/ethereum/go-ethereum/issues/16342#issuecomment-444470319
       - --http
-      - --http.api=admin,eth,net,web3,personal
+      - --http.api=admin,eth,net,web3,personal,miner,debug,txpool
       - --http.addr=0.0.0.0
       - --http.corsdomain=*
       - --ws
-      - --ws.api=eth,net,web3
+      - --ws.api=admin,eth,net,web3,txpool,debug
       - --ws.addr=0.0.0.0
       - --ws.origins=*
       - --authrpc.vhosts=*
